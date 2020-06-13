@@ -1,9 +1,8 @@
-# rahulpnath.com
+# RavikumarPasupuleti.com
 
 My personal website
 
-
-Built with [Gatsby](https://www.gatsbyjs.org/) 
+Built with [Gatsby](https://www.gatsbyjs.org/)
 
 [Lighthouse test](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://www.rahulpnath.com.com)
 
