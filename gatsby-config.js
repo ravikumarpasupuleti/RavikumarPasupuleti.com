@@ -36,70 +36,9 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-mailchimp',
-      options: {
-        endpoint:
-          'https://rahulpnath.us4.list-manage.com/subscribe/post?u=0ce70a8674f4eeb34468f3f55&amp;id=38866b3761',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
         siteUrl: config.url,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-feed-mdx',
-      options: {
-        query: `{
-					site {
-						siteMetadata {
-              site_url
-              feed_url
-              image_url
-              title
-              author
-              copyright
-              description
-						}
-					}
-				}`,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  url: site.siteMetadata.site_url + edge.node.fields.slug,
-                  categories: edge.node.frontmatter.tags,
-                  author: 'Rahul Nath',
-                })
-              })
-            },
-            query: `{
-							allMdx(
-                filter: {fileAbsolutePath: {regex: "/blog/"}}
-								sort: { order: DESC, fields: [frontmatter___date] }
-							) {
-								edges {
-									node {
-										excerpt: excerpt(pruneLength: 260)
-                    fields {
-                      slug
-                    }
-										frontmatter {
-											title
-											date
-										}
-									}
-								}
-							}
-						}`,
-            output: config.siteRss,
-            title: 'Rahul Nath',
-            link: 'https://feeds.feedburner.com/ravikumarpasupuleti',
-          },
-        ],
       },
     },
     {

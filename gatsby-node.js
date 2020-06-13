@@ -3,7 +3,7 @@ const Queries = require('./queries')
 const createPaginatedPages = require('gatsby-paginate')
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
+  const { createNodeField } = actions
 
   // Sometimes, optional fields tend to get not picked up by the GraphQL
   // interpreter if not a single content uses it. Therefore, we're putting them
@@ -12,28 +12,31 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   // eslint-disable-next-line default-case
   switch (node.internal.type) {
     case 'Mdx': {
-      const { relativePath } = getNode(node.parent);
-      const  slug = `/${relativePath.replace('.mdx', '').replace('.markdown', '').replace('.md','')}/`;
+      const { relativePath } = getNode(node.parent)
+      const slug = `/${relativePath
+        .replace('.mdx', '')
+        .replace('.markdown', '')
+        .replace('.md', '')}/`
       // Used to generate URL to view this content.
       createNodeField({
         node,
         name: 'slug',
         value: slug || '',
-      });
+      })
     }
   }
-};
+}
 
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
   try {
     const postTemplate = path.resolve('./src/templates/post.js')
     const tagTemplate = path.resolve('./src/templates/tag.js')
-    const tagPrefix = '/blog/tag/';
-    const categoryPrefix = '/blog/category/';
+    const tagPrefix = '/blog/tag/'
+    const categoryPrefix = '/blog/category/'
 
-    const { data, errors } = await graphql(Queries);
-    const postsPerPage = 8;
-    const totalPages = Math.ceil(data.posts.edges.length/postsPerPage);
+    const { data, errors } = await graphql(Queries)
+    const postsPerPage = 8
+    const totalPages = Math.ceil(data.posts.edges.length / postsPerPage)
 
     createPage({
       path: 'blog',
@@ -69,27 +72,34 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       pathPrefix: 'blog/page',
     })
 
-    let alltags = [];
-     // Create posts pages
-     data.posts.edges.forEach(({ node: { fields: { slug }, frontmatter: { tags } } }) => {
-      alltags = alltags.concat(tags || [])
-      createPage({
-        path: slug,
-        component: postTemplate,
-      })
-    })
+    let alltags = []
+    // Create posts pages
+    data.posts.edges.forEach(
+      ({
+        node: {
+          fields: { slug },
+          frontmatter: { tags },
+        },
+      }) => {
+        alltags = alltags.concat(tags || [])
+        createPage({
+          path: slug,
+          component: postTemplate,
+        })
+      }
+    )
 
     createPage({
       path: 'subscribe',
-      component: path.resolve('src/templates/subscribe.js')
+      component: path.resolve('src/templates/subscribe.js'),
     })
-    
+
     createPage({
       path: 'archives',
       component: path.resolve('src/templates/archive.js'),
       context: {
-        allPosts: data.posts.edges
-      }
+        allPosts: data.posts.edges,
+      },
     })
 
     createPage({
@@ -106,39 +116,45 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     })
 
     // Create draft pages
-    data.drafts.edges.forEach(({ node: { fields: { slug } } }) => {
-      createPage({
-        path: slug,
-        component: postTemplate,
-      })
-    })
- 
-    const uniqueTags = [...new Set(alltags)];
+    data.drafts.edges.forEach(
+      ({
+        node: {
+          fields: { slug },
+        },
+      }) => {
+        createPage({
+          path: slug,
+          component: postTemplate,
+        })
+      }
+    )
+
+    const uniqueTags = [...new Set(alltags)]
     // Create tags pages
-   uniqueTags.forEach(tag => {
-     let slug = tag.replace(/\s+/g, '-');
+    uniqueTags.forEach(tag => {
+      let slug = tag.replace(/\s+/g, '-')
       createPage({
         path: `${tagPrefix}${slug}/`,
         component: tagTemplate,
         context: {
           slug,
-          tag
+          tag,
         },
       })
     })
 
     // Create category pages
     uniqueTags.forEach(tag => {
-      let slug = tag.replace(/\s+/g, '-').toLowerCase();
+      let slug = tag.replace(/\s+/g, '-').toLowerCase()
       createPage({
         path: `${categoryPrefix}${slug}/`,
         component: tagTemplate,
         context: {
           slug,
-          tag
+          tag,
         },
-      });
       })
+    })
 
     if (errors) {
       throw new Error(errors)

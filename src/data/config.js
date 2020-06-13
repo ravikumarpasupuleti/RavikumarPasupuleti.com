@@ -1,7 +1,7 @@
 module.exports = {
   defaultTitle: 'Ravikumar Pasupuleti',
   logo: 'https://www.rahulpnath.com/favicon/logo-48.png',
-  author: 'Rahul Nath',
+  author: 'Ravikumar Pasupuleti',
   url: 'https://www.RavikumarPasupuleti.com',
   legalName: 'Ravikumar Pasupuleti',
   defaultDescription: "I'm Ravikumar Pasupuleti.",
@@ -9,7 +9,7 @@ module.exports = {
     twitter: 'http://www.twitter.com/ravikpasupuleti',
     github: 'https://github.com/ravikumarpasupuleti',
     linkedin: 'https://www.linkedin.com/in/ravikumarpasupuleti',
-    instagram: 'https://instagram.com/rahulpnath',
+    instagram: '',
     youtube: '',
   },
   googleAnalyticsID: '',

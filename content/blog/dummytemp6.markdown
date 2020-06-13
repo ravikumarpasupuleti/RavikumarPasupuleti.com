@@ -1,19 +1,17 @@
 ---
 author: [Ravikumar Pasupuleti]
-title: 'Dummy title 1'
+title: ' dummy 1'
 
 date: 2020-02-10
 tags:
-  - SharePoint Online
-  - M365
-thumbnail: ../images/ravikumarpasupuleti.png
-popular: true
+  - Azure DevOps
+  - React
+thumbnail: ../images/devops_create_react_app_thumbnail.png
+popular: false
 ---
 
-blah
+[Create-react-app](https://github.com/facebook/create-react-app) is the defacto for most of the websites that I work on these days. In this post, we will see how to set up a build/deploy pipeline for [create react app](https://create-react-app.dev/) in Azure DevOps. We will be using the YML format for the pipeline here, which makes it possible to have the build definitions as part of the source code.
 
-## Build Pipeline
-
-![](../images/ravikumarpasupuleti.jpg)
+## Environment/Stage Variables
 
 I hope this helps you to set up a Build/Release pipeline for your create-react-app!

@@ -1,7 +1,6 @@
 import { Container, Layout } from 'components/common'
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import React from "react"
-
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+import React from 'react'
 
 const WikiPage = ({
   data: {
@@ -13,9 +12,9 @@ const WikiPage = ({
   ...props
 }) => (
   <Layout {...props} title={title}>
-      <Container>
-        <MDXRenderer>{body}</MDXRenderer>
-      </Container>
+    <Container>
+      <MDXRenderer>{body}</MDXRenderer>
+    </Container>
   </Layout>
 )
 

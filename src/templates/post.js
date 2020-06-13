@@ -16,7 +16,11 @@ export default ({ data: { post } }) => (
             ? post.frontmatter.edited
             : post.frontmatter.date
         }
-        cover={ (post.frontmatter.thumbnail && post.frontmatter.thumbnail.childImageSharp && post.frontmatter.thumbnail.childImageSharp.fluid.originalImg)}
+        cover={
+          post.frontmatter.thumbnail &&
+          post.frontmatter.thumbnail.childImageSharp &&
+          post.frontmatter.thumbnail.childImageSharp.fluid.originalImg
+        }
         location={post.fields.slug}
         description={post.description}
         readTime={post.timeToRead}
@@ -38,7 +42,6 @@ export const postQuery = graphql`
       frontmatter {
         normalDate: date
         date(formatString: "MMMM DD, YYYY")
-        edited(formatString: "MMMM DD, YYYY")
         title
         tags
         thumbnail {
