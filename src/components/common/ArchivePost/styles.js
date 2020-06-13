@@ -11,7 +11,7 @@ export const Post = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding: .5rem;
+  padding: 0.5rem;
   @media (max-width: 680px) {
     flex-direction: column;
   }
@@ -53,7 +53,7 @@ export const ArticleImg = styled.div`
   min-width: 280px;
   margin: 20px;
   overflow: hidden;
-  background-image: linear-gradient(10deg, #823EB7 0%, #823EB7 100%);
+  background-image: linear-gradient(10deg, #000000 0%, #000000 100%);
 
   .gatsby-image-wrapper {
     height: 100%;
@@ -151,7 +151,6 @@ export const StyledSpan = styled.div`
   display: inline-flex;
   align-items: center;
 `
-
 
 export const Meta = styled.div`
   display: flex;

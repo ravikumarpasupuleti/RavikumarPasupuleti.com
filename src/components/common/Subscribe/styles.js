@@ -94,7 +94,7 @@ export const Fields = styled.div`
 
 export const Input = styled.input`
   padding: 0.5rem;
-  border: 2px solid #823EB7;
+  border: 2px solid #000000;
   border-radius: 7px;
   flex: 2;
 

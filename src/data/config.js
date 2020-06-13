@@ -13,8 +13,8 @@ module.exports = {
     youtube: '',
   },
   googleAnalyticsID: '',
-  themeColor: '#823EB7',
-  backgroundColor: '#823EB7',
+  themeColor: '#000000',
+  backgroundColor: '#000000',
   siteRss: '/index.xml',
   social: {
     facebook: '774780093',

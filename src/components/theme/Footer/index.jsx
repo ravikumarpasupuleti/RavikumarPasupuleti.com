@@ -17,7 +17,7 @@ export const Footer = () => {
             <li>
               <Brand as={Link} to="/">
                 {/* <StyledLogo as={Logo} color="#fff" strokeWidth="2" />  */}
-                Rahul Nath
+                Ravikumar Pasupuleti
               </Brand>
             </li>
           </List>
