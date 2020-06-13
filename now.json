@@ -1,0 +1,7 @@
+{
+  "build": {
+    "env": {
+      "MC_ENDPOINT": "@mc_endpoint"
+    }
+  }
+}

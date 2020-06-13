@@ -1,0 +1,8 @@
+# Redirect default Netlify subdomain to primary domain
+http://rahulpnath.netlify.com/* http://www.rahulpnath.com/:splat 301!
+https://rahulpnath.netlify.com/* https://www.rahulpnath.com/:splat 301!
+
+/resume     https://1drv.ms/w/s!AgzDrQdBA6jVyGA3SEDlC-VT3WwJ    302
+/blog/defaultAzureCredential_from_azure_sdk  /defaultazurecredential_from_azure_sdk 302
+/blog/tools-that-I-use  /blog/tools-that-i-use 302
+/blog/variable-snapshotting-in-Azure-DevOps-when-using-Azure-Key-Vault /blog/variable-snapshotting-in-azure-devops-when-using-azure-key-vault 302

@@ -1,0 +1,16 @@
+- name: Twitter
+  creative: false
+  darkIcon: './assets/social/dark/twitter.svg'
+  lightIcon: './assets/social/light/twitter.svg'
+  link: https://twitter.com/ravikpasupuleti
+
+- name: Linkedin
+  creative: false
+  darkIcon: './assets/social/dark/linkedin.svg'
+  lightIcon: './assets/social/light/linkedin.svg'
+  link: https://www.linkedin.com/in/ravikumarpasupuleti
+- name: Github
+  creative: true
+  darkIcon: './assets/social/dark/github.svg'
+  lightIcon: './assets/social/light/github.svg'
+  link: https://github.com/ravikumarpasupuleti
