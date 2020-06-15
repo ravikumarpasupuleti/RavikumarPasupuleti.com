@@ -10,10 +10,10 @@ export const Intro = () => {
     <Wrapper theme={theme} as={SmallerContainer}>
       <h1>Hi, I am Ravikumar Pasupuleti</h1>
       <p>
-        I have rich experinece in business analysis, solution design, solution
+        I have rich experience in business analysis, solution design, solution
         architecture, stakeholder management, implementing and designing
-        productivity applications using Office 365 and Microsoft 365 platfrom.
-        Passinate about technology and always willing to learn new stuff.
+        productivity applications using Office 365 and Microsoft 365 platform.
+        Passionate about technology and always willing to learn new stuff.
       </p>
       <Flex>
         <MagicalButton as={Link} to="/about">

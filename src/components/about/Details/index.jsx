@@ -16,12 +16,7 @@ export default () => {
   `)
   return (
     <Wrapper as={Container}>
-      <a href={AboutImage.fluid.src}>
-        {/* <Img
-          fluid={AboutImage.fluid}
-          alt="Rahul, Parvathy and Gautham at The Farm, Byron Bay"
-       />*/}
-      </a>
+      <a href={AboutImage.fluid.src}></a>
       <br />
       <Text theme={theme}>
         Hi,I am Ravikumar Kumar. I am a Senior Technical Consultant, currently

@@ -6,13 +6,12 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.ravikumarpasupuleti.com',
-    site_url: 'https://www.ravikumarpasupuleti.com',
+    siteUrl: 'https://www.m365experts.com',
+    site_url: 'https://www.m365experts.com',
     feed_url: `${config.url}${config.siteRss}`,
     title: 'Ravikumar Pasupuleti',
     description: 'Recent content on Ravikumar Pasupuleti',
-    image_url:
-      'https://www.ravikumarpasupuleti.com/static/favicon/logo-512.png',
+    image_url: 'https://www.m365experts.com/static/favicon/logo-512.png',
     author: config.author,
     copyright: `${config.defaultTitle} © ${new Date().getFullYear()}`,
   },
@@ -26,6 +25,13 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/providers/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-theme-notes`,
+      options: {
+        // basePath defaults to `/`
+        basePath: `/notes`,
       },
     },
     {

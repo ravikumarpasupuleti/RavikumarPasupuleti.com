@@ -1,6 +1,6 @@
 module.exports = {
   defaultTitle: 'Ravikumar Pasupuleti',
-  logo: 'https://www.rahulpnath.com/favicon/logo-48.png',
+  logo: 'https://www.m365experts.com/favicon/logo-48.png',
   author: 'Ravikumar Pasupuleti',
   url: 'https://www.RavikumarPasupuleti.com',
   legalName: 'Ravikumar Pasupuleti',

@@ -7,8 +7,8 @@ import { Ad, ArticleDate, ArticleWrapper, Comments, Flex, Tags } from './styles'
 
 export const Post = ({ body, frontmatter, timeToRead, fields }) => {
   const { theme } = useContext(ThemeContext)
-  const disqusShortName = 'rahulpnath'
-  const postIdentifier = `https://www.rahulpnath.com${fields.slug}`
+  const disqusShortName = 'ravikpasupuleti'
+  const postIdentifier = `https://www.m365experts.com${fields.slug}`
   const disqusConfig = {
     url: postIdentifier,
     identifier: postIdentifier,
@@ -48,13 +48,13 @@ export const Post = ({ body, frontmatter, timeToRead, fields }) => {
         /> */}
       </Flex>
       <MDXRenderer>{body}</MDXRenderer>
-      {/* <SocialShare title={frontmatter.title} path={fields.slug} /> */}
-      {/* <Comments>
+      <SocialShare title={frontmatter.title} path={fields.slug} />
+      <Comments>
         <Disqus.DiscussionEmbed
           shortname={disqusShortName}
           config={disqusConfig}
         />
-      </Comments> */}
+      </Comments>
     </ArticleWrapper>
   )
 }

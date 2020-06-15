@@ -36,8 +36,8 @@ export const SEO = ({
 		"headline": "${description}",
 		"image": "${
       cover
-        ? `https://www.rahulpnath.com${cover}`
-        : `https://www.rahulpnath.com${Thumbnail}`
+        ? `https://www.m365experts.com${cover}`
+        : `https://www.m365experts.com${Thumbnail}`
     }",
 		"datePublished": "${datePublished}",
 		"dateModified": "${dateModified}",
@@ -55,7 +55,7 @@ export const SEO = ({
 			}
 		},
 		"description": "${description}",
-		"url": "${url}${location}/?ref=rahulpnath.com"
+		"url": "${url}${location}/?ref=m365experts.com"
 	}`
 
   const structuredDataOrganization = `{
@@ -102,7 +102,7 @@ export const SEO = ({
 
       <meta
         property="og:url"
-        content={`${url}${location}/?ref=rahulpnath.com`}
+        content={`${url}${location}/?ref=m365experts.com`}
       />
       <meta
         property="og:type"

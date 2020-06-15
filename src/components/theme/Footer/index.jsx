@@ -31,6 +31,9 @@ export const Footer = () => {
             <li>
               <Link to="/blog/">Blog</Link>
             </li>
+            <li>
+              <Link to="/notes/">Notes</Link>
+            </li>
           </List>
           <List>
             <li>Follow me on</li>
