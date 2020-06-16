@@ -41,6 +41,60 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-feed-mdx',
+      options: {
+        query: `{
+					site {
+						siteMetadata {
+              site_url
+              feed_url
+              image_url
+              title
+              author
+              copyright
+              description
+						}
+					}
+				}`,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  url: site.siteMetadata.site_url + edge.node.fields.slug,
+                  categories: edge.node.frontmatter.tags,
+                  author: 'Ravikumar Pasupuleti',
+                })
+              })
+            },
+            query: `{
+							allMdx(
+                filter: {fileAbsolutePath: {regex: "/blog/"}}
+								sort: { order: DESC, fields: [frontmatter___date] }
+							) {
+								edges {
+									node {
+										excerpt: excerpt(pruneLength: 260)
+                    fields {
+                      slug
+                    }
+										frontmatter {
+											title
+											date
+										}
+									}
+								}
+							}
+						}`,
+            output: config.siteRss,
+            title: 'Ravikumar Pasupuleti',
+            link: 'https://feeds.feedburner.com/ravikpasupuuleti',
+          },
+        ],
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content`,
