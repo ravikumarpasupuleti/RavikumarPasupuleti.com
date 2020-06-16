@@ -31,7 +31,7 @@ module.exports = {
       resolve: `gatsby-theme-notes`,
       options: {
         // basePath defaults to `/`
-        basePath: `/notes`,
+        basePath: `/notes/`,
       },
     },
     {
@@ -98,13 +98,6 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content`,
-        name: 'posts',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/content/notes`,
         name: 'posts',
       },
     },
