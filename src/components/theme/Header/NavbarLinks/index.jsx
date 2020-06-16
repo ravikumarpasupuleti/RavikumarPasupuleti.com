@@ -23,9 +23,6 @@ export default ({ desktop }) => {
       <Link to="/about" activeClassName="current">
         About
       </Link>
-      <Link to="/notes" activeClassName="current">
-        Notes
-      </Link>
       <StyledButton type="button" onClick={toggleTheme}>
         <img src={theme === 'dark' ? day : night} alt={theme} />
       </StyledButton>

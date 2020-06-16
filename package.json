@@ -76,7 +76,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby clean & gatsby build",
     "start": "gatsby develop",
     "reset": "rm -rf cache/ public/",
     "lint": "eslint src",
