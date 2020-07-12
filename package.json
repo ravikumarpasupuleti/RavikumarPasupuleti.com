@@ -52,6 +52,7 @@
     "react-share": "^3.0.1",
     "react-slick": "^0.25.2",
     "react-typography": "^0.16.19",
+    "sharp": "^0.23.4",
     "slick-carousel": "^1.8.1",
     "styled-components": "^4.0.0",
     "styled-system": "^5.1.2",
@@ -93,5 +94,8 @@
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "^2.2.0",
     "prettier": "^1.19.1"
+  },
+  "resolutions": {
+    "sharp": "^0.23.1"
   }
 }

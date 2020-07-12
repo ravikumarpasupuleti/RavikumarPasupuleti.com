@@ -28,6 +28,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-theme-notes`,
+      options: {
+        // basePath defaults to `/`
+        basePath: `/notes`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
         siteUrl: config.url,
