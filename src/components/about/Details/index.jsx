@@ -19,10 +19,11 @@ export default () => {
       <a href={AboutImage.fluid.src}></a>
       <br />
       <Text theme={theme}>
-        Hi,I am Ravikumar Kumar. I am a Senior Technical Consultant, currently
-        working in Sydney, Australia. I love to be called the tech guy who
-        solves problems. Understanding client needs and providing right solution
-        gives a great satisfaction.
+        Hi,I am Ravikumar Pasupuleti. I am a Senior Technical Consultant,
+        currently working in Sydney, Australia. I love to be called the tech guy
+        who solves problems. Understanding client needs and providing right
+        solution gives a great satisfaction. Have rich experience in pre-sales,
+        proposals, project scoping and technical solution delivery.
       </Text>
 
       <Text theme={theme}>
@@ -42,11 +43,7 @@ export default () => {
         <strong>Also, digital dairy for me to track about technology.</strong>
       </Text>
       <Text theme={theme}>
-        If you want to drop a mail, feel free to sent it to{' '}
-        <a href="mailto:hello@ravikumarpasupuleti.com?subject=Hello Ravikumar!">
-          hello@ravikumarpasupuleti.com
-        </a>
-        .
+        Connect with me in Linkedin or Twitter if you have any questions.
       </Text>
     </Wrapper>
   )
