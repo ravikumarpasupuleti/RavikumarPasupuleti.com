@@ -16,7 +16,7 @@ export const Footer = () => {
           <List>
             <li>
               <Brand as={Link} to="/">
-                {/* <StyledLogo as={Logo} color="#fff" strokeWidth="2" />  */}
+                <img src="/favicon/logo-512x512.png" alt="Ravi P" />
                 Ravikumar Pasupuleti
               </Brand>
             </li>
