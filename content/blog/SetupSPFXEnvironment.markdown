@@ -2,7 +2,7 @@
 author: [Ravikumar Pasupuleti]
 title: 'Setting up SPFX Environment and Tooling'
 
-date: 2020-07-01
+date: 2020-06-01
 tags:
   - SPFX
   - Tooling
@@ -14,27 +14,29 @@ popular: true
 
 ## SPFX Development environment Set up(Windows)
 
-
-
 1. Chocolaltey
    1. First, ensure that you are using an administrative shell - you can also install as a non-admin, check out Non-Administrative Installation.
    2. https://chocolatey.org/docs/installation
 2. nodejs
    1. https://nodejs.org/dist/v10.22.0/docs/api/
 3. nvm
+
    1. nvm is a version manager for node.js, designed to be installed per-user, and invoked per-shell. nvm works on any POSIX-compliant shell (sh, dash, ksh, zsh, bash), in particular on these platforms: unix, macOS, and windows WSL.
    2. https://github.com/nvm-sh/nvm#installing-and-updating
    3. Item 3b
 
 4. yarn
-   1.  Both NPM and Yarn are both package managers. They created Yarn to solve the problems they were having while using NPM particularly the problems with consistency, security and speed. Yarn has the same feature set while operating faster, more securely and most importantly more reliable.
-   2.  Faster build process
-   3.  can run multiple versions of packages.
+
+   1. Both NPM and Yarn are both package managers. They created Yarn to solve the problems they were having while using NPM particularly the problems with consistency, security and speed. Yarn has the same feature set while operating faster, more securely and most importantly more reliable.
+   2. Faster build process
+   3. can run multiple versions of packages.
 
 5. Install Python
+
    1. https://www.python.org/downloads/
 
-6. Updating environmental variables if required  
+6. Updating environmental variables if required
+
    1. https://www.python.org/downloads/
    2. C:\Python27
    3. C:\Python27\scripts
@@ -62,19 +64,27 @@ popular: true
    12. bracket pair colozier
 
 ## Finally SharePoint Framework
-1. Follow the instructions for SPFX set up 
+
+1. Follow the instructions for SPFX set up
    1. https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment
 2. Commands
+
 ##### Install Yeoman and Gulp
+
 ```console
 yarn gobal add gulp yo @microsoft/generator-sharepoint
 ```
+
 ##### PnP SPFX Generator
+
 ```console
 yarn global add @pnp/generator-spfx
 ```
+
 ##### Trusting SPFX - Local Workbench setup
+
 ```console
 gulp trust-dev-cert
 ```
+
 You are all set to run your First SPFX webpart
