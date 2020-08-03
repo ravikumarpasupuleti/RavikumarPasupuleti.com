@@ -2,13 +2,15 @@
 author: [Ravikumar Pasupuleti]
 title: 'Create React App'
 
-date: 2020-02-10
+date: 2020-06-01
 tags:
   - React
+  - Azure DevOps
 thumbnail: ../images/devops_create_react_app_thumbnail.png
-popular: true
+popular: false
 ---
 
-[Create-react-app](https://github.com/facebook/create-react-app) is the defacto for most of the websites that I work on these days. In this post, we will see how to set up a build/deploy pipeline for [create react app](https://create-react-app.dev/) in Azure DevOps. We will be using the YML format for the pipeline here, which makes it possible to have the build definitions as part of the source code.
+[Create-react-app](https://github.com/facebook/create-react-app) is the defacto for most of the websites that developers work these days.
 
-## Build Pipeline
+
+
