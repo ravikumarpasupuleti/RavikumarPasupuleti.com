@@ -1,6 +1,6 @@
 {
-  "name": "RavikumarPasupuleti.com",
-  "description": "My personal website",
+  "name": "m365experts.com",
+  "description": "My personal leraning websiteh",
   "version": "1.0.0",
   "author": "Ravikumar Pasupuleti",
   "dependencies": {
@@ -52,7 +52,6 @@
     "react-share": "^3.0.1",
     "react-slick": "^0.25.2",
     "react-typography": "^0.16.19",
-    "sharp": "^0.23.4",
     "slick-carousel": "^1.8.1",
     "styled-components": "^4.0.0",
     "styled-system": "^5.1.2",

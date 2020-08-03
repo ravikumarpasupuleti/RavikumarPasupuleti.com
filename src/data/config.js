@@ -2,7 +2,7 @@ module.exports = {
   defaultTitle: 'Ravikumar Pasupuleti',
   logo: 'https://www.m365experts.com/favicon/logo-48.png',
   author: 'Ravikumar Pasupuleti',
-  url: 'https://www.RavikumarPasupuleti.com',
+  url: 'https://www.m365experts.com',
   legalName: 'Ravikumar Pasupuleti',
   defaultDescription: "I'm Ravikumar Pasupuleti.",
   socialLinks: {
@@ -12,12 +12,12 @@ module.exports = {
     instagram: '',
     youtube: '',
   },
-  googleAnalyticsID: '',
+  googleAnalyticsID: 'UA-174265094-1',
   themeColor: '#000000',
   backgroundColor: '#000000',
   siteRss: '/index.xml',
   social: {
-    facebook: '774780093',
+    facebook: 'ravikumarpasupulate',
     twitter: '@ravikpasupuleti',
   },
   address: {
