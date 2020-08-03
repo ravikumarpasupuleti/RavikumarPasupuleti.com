@@ -137,7 +137,7 @@ export const SEO = ({
         name="twitter:image:src"
         content={cover ? `${url}${cover}` : `${url}${Thumbnail}`}
       />
-      <meta name="p:domain_verify" content="8b98c12d91967ce1fde7230da80b3d2b" />
+      <meta name="p:domain_verify" content="e3aa1c5f54cb64e293e97aa75fe39cda" />
       <script type="application/ld+json">
         {type === 'NewsArticle'
           ? structuredDataArticle
