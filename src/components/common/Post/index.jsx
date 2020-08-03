@@ -39,13 +39,7 @@ export const Post = ({ body, frontmatter, timeToRead, fields }) => {
             <i>{timeToRead} min read</i>
           </ArticleDate>
         </div>
-        {/* <Ad
-          theme={theme}
-          dangerouslySetInnerHTML={{
-            __html:
-              "<script async type='text/javascript' src='//cdn.carbonads.com/carbon.js?serve=CE7IVK7J&placement=wwwrahulpnathcom' id='_carbonads_js' />",
-          }}
-        /> */}
+        {/* */}
       </Flex>
       <MDXRenderer>{body}</MDXRenderer>
       <SocialShare title={frontmatter.title} path={fields.slug} />
