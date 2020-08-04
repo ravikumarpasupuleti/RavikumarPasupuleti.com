@@ -1,4 +1,4 @@
-import Thumbnail from 'assets/me1.jpg'
+import Thumbnail from 'assets/images/me.jpg'
 import {
   address,
   author,
