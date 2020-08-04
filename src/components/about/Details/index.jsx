@@ -9,7 +9,7 @@ export default () => {
   const { theme } = useContext(ThemeContext)
   const { AboutImage } = useStaticQuery(graphql`
     query AboutImageQuery {
-      AboutImage: imageSharp(fluid: { originalName: { eq: "us.jpg" } }) {
+      AboutImage: imageSharp(fluid: { originalName: { eq: "us1.jpg" } }) {
         ...imageFields
       }
     }
