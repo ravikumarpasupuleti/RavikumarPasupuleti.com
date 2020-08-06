@@ -9,7 +9,7 @@ tags:
   - React
   - VS Code
   - Blogging
-thumbnail: ../images/vscodespacesandgatsby.png
+thumbnail: ../images/vscodespacesandgatsby1.png
 popular: true
 ---
 
