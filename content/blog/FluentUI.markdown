@@ -2,7 +2,7 @@
 author: [Ravikumar Pasupuleti]
 title: 'Fluent UI'
 
-date: 2020-02-10
+date: 2020-04-10
 tags:
   - SharePoint Online
   - FluentUI
@@ -12,10 +12,9 @@ thumbnail: ../images/Fluent.png
 popular: false
 ---
 
-
 ## Fluent UI
 
-We had been using Office UI fabric for SPFX and Stardust for Microsoft teams development.
+I had been using Office UI fabric for SPFX and Stardust for Microsoft teams development.
 
 Now both would be grouped Fluent UI which will help in having standardised developer experience across M365 ecosystem.
 
