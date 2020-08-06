@@ -33,7 +33,7 @@ I have created 2 Visual Studio Codespaces, one for SharePoint Development (SPFX)
 
 Let's talk about Gatsby Development environment using Visual Studio Codespaces.
 
-###### Visual Studio Codespaces
+#### Visual Studio Codespaces
 
 Cloud-hosted dev environments accessible from anywhere. Idea was to develop from anywhere, anytime without thinking about infrastructure and development environment.
 
@@ -41,7 +41,7 @@ Log into [visualstudio Online ](https://online.visualstudio.com/environments)
 
 ### Option 1 : Using Browser
 
-Create CodeSpace button and spin up your environment
+Click on "Create CodeSpace button" and spin up new environment. By default it lasts for 30 mins and it gets suspened.
 
 ![Create CodeSpace](../images/createblogcodespace.png)
 
@@ -81,9 +81,9 @@ https://online.visualstudio.com/port-forwarding-sign-in/XXXXXXXX?port=8000&cid=X
 
 ![Yarn Start](../images/m365expertsgatsby1.png)
 
-When it goes to the forwarding port it is a blank screen.
+When it goes to the forwarding port it returns a blank screen.
 
-When you check the source it is loading the initial page but not injecting the code into the browser.
+When you check the source, it is loading the initial page but not injecting the code into the browser.
 
 Current port forwarding solution in the browser has a lot of limitations. For instance, websocket connections don't work. You can get around that by installing the Codespaces extension in VS Code on the desktop and connecting from there.
 
@@ -139,7 +139,7 @@ At the end, I had to be content with running code from remote explorer.
 ### Benefits
 
 - your build times and run times are super fast
-- Don't need to worry about setting up tools
+- Don't need to worry about setting up tools on your local machine
 - It costs only few cents when you want to update code for any demos.
 
 Hopefully, port forwarding issue would be fixed and then it would be fantastic news for development community.
