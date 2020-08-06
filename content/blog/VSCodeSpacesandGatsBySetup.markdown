@@ -139,4 +139,7 @@ At the end, I had to be content with running code from remote explorer.
 ### Benefits
 
 - your build times and run times are super fast
-- Dont need to worry about setting up tools
+- Don't need to worry about setting up tools
+- It costs only few cents when you want to update code for any demos.
+
+Hopefully, port forwarding issue would be fixed and then it would be fantastic news for development community.
