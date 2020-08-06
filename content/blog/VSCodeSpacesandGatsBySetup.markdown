@@ -15,7 +15,7 @@ popular: true
 
 ## Setting up Gatsby Development using Visual Studio Codespaces
 
-Recently, I have set up my personal blog site using Gatsby and Netlify.
+Recently, I have set up my personal blog site using Gatsby and Visual Studio Codespace.
 
 In this article, I will explain how you can set up development environment in no time using Visual Stuido Code spaces.
 
