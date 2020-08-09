@@ -16,6 +16,7 @@ module.exports = {
   themeColor: '#000000',
   backgroundColor: '#000000',
   siteRss: '/index.xml',
+  googleAdsense: 'ca-pub-8622598964387581',
   social: {
     facebook: 'ravikumarpasupulate',
     twitter: '@ravikpasupuleti',
