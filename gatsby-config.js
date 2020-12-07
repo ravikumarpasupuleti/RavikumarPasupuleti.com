@@ -144,6 +144,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: config.googleAdsense,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: config.googleAnalyticsID,
